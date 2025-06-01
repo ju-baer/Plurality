@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# PLURALITY - The Intersoul Infrastructure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An immersive, cosmic-feeling, non-linear interface where thoughts evolve, merge, orbit, or die. PLURALITY is not a website — it is a **living, idea-reactive space**. Visitors don't navigate. They resonate.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project implements the PLURALITY concept as described in the art-direction manifesto. It creates an immersive, interactive experience with the following key features:
 
-## Expanding the ESLint configuration
+- **Cosmic Background**: Dynamic stellar iridescence with shifting colors and patterns
+- **Cognitons**: Floating idea-forms that react to cursor proximity with emotional ripples
+- **Echo Ribbons**: Trails between related concepts that stretch, shimmer, and connect
+- **Concept Nebulae**: Thought-clusters slowly forming constellations of emerging meaning
+- **Resonance Fields**: Touch-based metaphors that pulsate with user intention
+- **IdeoPortals**: Entry points into deeper layers of non-verbal interaction
+- **Ambient Soundscape**: Generative audio that responds to interactions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technology Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Frontend framework
+- **TypeScript**: Type-safe JavaScript
+- **Three.js**: 3D rendering
+- **@react-three/fiber & @react-three/drei**: React bindings for Three.js
+- **GSAP**: Animations
+- **Tone.js**: Audio synthesis and effects
+- **Tailwind CSS**: Styling
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Ensure you have Node.js and pnpm installed
+2. Clone this repository
+3. Navigate to the project directory
+4. Install dependencies:
+   ```
+   pnpm install
+   ```
+5. Start the development server:
+   ```
+   pnpm run dev
+   ```
+6. Open your browser to the URL shown in the terminal (typically http://localhost:5173)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Interaction Guide
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Mouse Movement**: Navigate the cosmic space
+- **Click on Cognitons**: Trigger sound and visual effects
+- **Click on IdeoPortals**: Generate new Cognitons and connections
+- **First Click Anywhere**: Initialize the ambient soundscape
+
+## Design Principles
+
+As specified in the manifesto, PLURALITY follows these core design principles:
+
+1. **No Boxes. No Grids. No UI.**
+   - Everything is organic, flowing, and non-Euclidean
+   - Avoids rectangles in favor of idea-orbitals, cognition spirals, and liquid morphing clusters
+
+2. **Idea-First Navigation**
+   - Users interact with conceptual fields that unfold thought-holograms
+   - Navigation is based on resonance rather than traditional clicking
+
+3. **Sensory Layering**
+   - Layers sound, motion, text, and light like dream-logic
+   - Each idea emits a unique tone, with harmonic collisions creating emergent music
+
+4. **Temporal Fluidity**
+   - The interface evolves in real time, like living thoughts
+   - Elements subtly change and respond to time and interaction
+
+## Color Palette
+
+- **Stellar Iridescence**: Dynamic gradient backgrounds (purple–blue–teal–gold)
+- **Obsidian Black**: Void spaces, negative room
+- **Thoughtlight Silver**: Text, cognition trails
+- **Emotion Coral**: Highlighted pulses, idea collisions
+- **Ghostwhite Smoke**: Ethereal UI elements, memory trails
+
+## Deployment
+
+For production deployment:
+
+1. Build the project:
+   ```
+   pnpm run build
+   ```
+2. The built files will be in the `dist` directory, ready to be deployed to any static hosting service
